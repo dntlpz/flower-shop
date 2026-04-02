@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Explore a variety of indoor plants for your home or office." />
+    <title>Indoor Plants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">Bloom <span>&amp;</span> Petal Haven</div>
+      <ul class="nav-links">
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Arrangements</a></li>
+        <li><a href="#">Plants</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="cart-icon" id="cartIcon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </div>
+    </nav>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <span class="hero-eyebrow">Curated Collection</span>
+      <h1>Indoor <em>Plants</em></h1>
+      <p class="hero-sub">
+        Bring nature indoors. Each plant is hand-selected and nurtured by our team
+        to arrive at your door healthy, happy, and ready to grow.
+      </p>
+      <div class="hero-divider"></div>
+    </section>
+
+    <!-- PLANT CARDS -->
+    <main class="plants-grid">
+
+      <!-- PEACE LILY -->
+      <article class="plant-card">
+        <div class="card-img-wrap">
+          <span class="card-badge">Bestseller</span>
+          <img
+            src="https://edube.org/uploads/media/default/0001/04/spathiphyllum-peace-lily.jpg"
+            alt="Peace Lily"
+          />
+        </div>
+        <div class="card-body">
+          <h2>Peace Lily</h2>
+          <p class="card-desc">
+            The Peace Lily, known for its elegant white flowers, is a popular choice for indoor spaces.
+          </p>
+          <div class="card-footer">
+            <p class="price">$15</p>
+            <button class="btn-add" data-name="Peace Lily" data-price="15">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ZANZIBAR GEM -->
+      <article class="plant-card">
+        <div class="card-img-wrap">
+          <span class="card-badge">Easy Care</span>
+          <img
+            src="https://edube.org/uploads/media/default/0001/04/zamioculcas-zanzibar-gem.jpg"
+            alt="Zanzibar Gem"
+          />
+        </div>
+        <div class="card-body">
+          <h2>Zanzibar Gem</h2>
+          <p class="card-desc">
+            The Zanzibar Gem, with its glossy green foliage, is a low-maintenance indoor plant perfect for beginners.
+          </p>
+          <div class="card-footer">
+            <p class="price">$20</p>
+            <button class="btn-add" data-name="Zanzibar Gem" data-price="20">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p><strong>Bloom &amp; Petal Haven</strong> &nbsp;·&nbsp; Bringing nature to your doorstep</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
